@@ -3,119 +3,251 @@
     font-family: fuente1;
     src: url(../fuentes/fuente11.ttf);
 }
-.minu{
-    display: flex;
-    border-radius: 5px;
-    background-color:rgba(255,0,0,0.2);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
-    color: cornsilk;
-}
-header{
-    display: flex;
-    background-color:rgba(255,0,0,0.2);
-    padding: 20px;
-    justify-content: space-between;
-}
-header>div>{
-    padding: 0px 20px;
-}
-header>div>img{
-    background-color: tomato;
-    border-radius: 50%;
-}
-a{
-    text-decoration: none;
-    color: seashell;
-    text-align: center;
-    font-size: 20px;
-}
-a:hover{
-    font-size: 25px;
-}
-p{
-    color: seashell;
-    text-align: center;
-    font-size: 25px;
-    font-family: primero;
-}
-h1{
-    padding: 65px;
-    color: seashell;
-    text-align: center;
-    font-size: 60px;
-    font-family: fuente1;   
+/* screen para pc */
+@media screen and (min-width: 720px){
+    .minu{
+        display: flex;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 10px;
+        color: cornsilk;
+    }
+    header{
+        background-color:rgba(255,0,0,0.2);
+    }
+    header>div{
+        justify-content: center;
+        display: inline-flex;
+        padding: 20px;
+    }
+    header>div>div{
+        justify-content: space-around;
+        padding: 0px 20px;
+    }
+    header>div>div>img{
+        background-color: tomato;
+        border-radius: 50%;
+    }
+    a{
+        text-decoration: none;
+        color: seashell;
+        text-align: center;
+        font-size: 20px;
+    }
+    a:hover{
+        font-size: 25px;
+    }
+    p{
+        color: seashell;
+        text-align: center;
+        font-size: 25px;
+        font-family: primero;
+    }
+    h1{
+        padding: 65px;
+        color: seashell;
+        text-align: center;
+        font-size: 60px;
+        font-family: fuente1;   
+    }
+    
+    #boton{
+        background-color: transparent;
+        font-size: 23px;
+    }
+    #boton:hover{
+        color: black;
+        font-size: 23px;
+        border-radius: 8px;
+        border: solid rgba(138,221,45,0.4) 8px;
+        background-color:rgba(138,221,45,0.4)
+        ;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer>img:hover{
+        transform: rotate(90deg);
+        animation-duration: 60s;
+    }
+    li{
+        list-style-type: none;
+    }
+    nav ul{
+        margin: 0;
+        list-style-type: none;
+        overflow: visible;
+        padding: 0;
+        z-index: 0;
+        background-color:rgba(255,0,0,0.2);
+        display:flex;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:rgba(255,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 10px;
+        z-index: 1;
+        }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    nav ul li{
+        padding: 4px;
+    }
+    footer>div>img{
+        position: relative;
+        animation-name: ovni;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes ovni{
+        0%   { left:0px; top:0px;}
+        25%  { left:0px; top:200px;}
+        50%  { left:200px; top:200px;}
+        75%  { left:200px; top:0px;}
+        100% { left:0px; top:0px;}
+    }
+    body>h1{
+        animation-name: parrafo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes parrafo{
+        from {color: lavender;}
+        to {color: lawngreen;}
+    }
 }
 
-#boton{
-    background-color: transparent;
-    font-size: 23px;
-}
-#boton:hover{
-    color: black;
-    font-size: 23px;
-    border-radius: 8px;
-    border: solid rgba(138,221,45,0.4) 8px;
-    background-color:rgba(138,221,45,0.4)
-    ;
-}
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer>img:hover{
-    transform: rotate(90deg);
-    animation-duration: 60s;
-}
-li{
-    list-style-type: none;
-}
-nav ul{
-    margin: 0;
-    list-style-type: none;
-    overflow: visible;
-    padding: 0;
-    z-index: 0;
-    background-color:rgba(255,0,0,0.2);
-    display:flex;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:rgba(255,0,0,0.2);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px;
-    z-index: 1;
+
+/* screen para movil*/
+@media screen and (max-width: 580px){
+    .minu{
+        display: flex;
+        border-radius: 5px;
+        background-color:rgba(255,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 10px;
+        color: cornsilk;
     }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-nav ul li{
-    padding: 4px;
-}
-footer>div>img{
-    position: relative;
-    animation-name: ovni;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-}
-@keyframes ovni{
-    0%   { left:0px; top:0px;}
-    25%  { left:0px; top:200px;}
-    50%  { left:200px; top:200px;}
-    75%  { left:200px; top:0px;}
-    100% { left:0px; top:0px;}
-}
-body>h1{
-    animation-name: parrafo;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-@keyframes parrafo{
-    from {color: lavender;}
-    to {color: lawngreen;}
+    header{
+        display: block;
+        background-color:rgba(255,0,0,0.2);
+        padding: 20px;
+        justify-content: space-between;
+    }
+    header>div>{
+        align-content: space-between;
+        padding: 0px 20px;
+    }
+    header>div>div{
+        justify-content: space-between;
+        display: inline;
+    }
+    header>div>div>img{
+        margin: auto;
+        width: 50px;
+        height: auto;
+        background-color: tomato;
+        border-radius: 50%;
+    }
+    a{
+        text-decoration: none;
+        color: seashell;
+        text-align: center;
+        font-size: 18px;
+    }
+    a:hover{
+        font-size: 22px;
+    }
+    p{
+        color: seashell;
+        text-align: center;
+        font­size: 2.5vw;
+        font-family: primero;
+    }
+    h1{
+        padding: 50px;
+        color: seashell;
+        text-align: center;
+        font­size: 4.8vh;
+        font-family: fuente1;   
+    }
+
+    #boton{
+        background-color: transparent;
+        font-size: 23px;
+        color: black;
+        border-radius: 8px;
+        border: solid rgba(138,221,45,0.4) 8px;
+        background-color:rgba(138,221,45,0.4)
+        ;
+    }
+    #boton:hover{
+        color: white;
+        padding: 10px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer>img{
+        display: none;
+    }
+    li{
+        list-style-type: none;
+    }
+    nav ul{
+        margin: 0;
+        list-style-type: none;
+        overflow: visible;
+        padding: 0;
+        z-index: 0;
+        background-color:rgba(255,0,0,0.2);
+        display:flex;
+    }
+    .dropdown {
+        position: relative;
+        display: block;}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:rgba(255,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 10px;
+        z-index: 1;
+        }
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+    nav ul li{
+        padding: 4px;
+    }
+    footer>div>img{
+        position: relative;
+        animation-name: ovni;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes ovni{
+        0%   { left:0px; top:0px;}
+        50%  { left:0px; top:200px;}
+        100% { left:0px; top:0px;}
+    }
+    body>h1{
+        animation-name: parrafo;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes parrafo{
+        from {color: lavender;}
+        to {color: lawngreen;}
+    }
 }
