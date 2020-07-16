@@ -31,6 +31,9 @@ body>section>div{
         background-color: tomato;
         border-radius: 50%;
     }
+    body>section{
+        display: none;
+    }
     a{
         font-family: 'Fondamento', cursive;
         text-decoration: none;
@@ -160,6 +163,16 @@ body>section>div{
         justify-content: space-between;
         background-color: tomato;
         border-radius: 50%;
+    }
+    body>section>div{
+        justify-content: space-between;
+        margin: auto;
+    }
+    body>p{
+        display: none;
+    }
+    body>h1{
+        display: none;
     }
     a{
         font-family: 'Fondamento', cursive;
