@@ -6,6 +6,10 @@
 body>section>div{
     justify-content: space-between;
 }
+#licen:hover{
+    color: white;
+    font-size: 12px;
+}
 /* screen para pc */
 @media screen and (min-width: 800px){
     .minu{
